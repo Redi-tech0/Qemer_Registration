@@ -1,0 +1,56 @@
+
+.courses {
+    text-align: center;
+    padding: 150px;
+   background-image: url(./cour.jpg); 
+   background-size: cover;
+   position: relative;
+    background-repeat: no-repeat; 
+    
+    
+    
+  }
+ 
+  .courses h2{
+    font-family: 'Montserrat', sans-serif; /* Choose your font */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold; /* Adjust weight as needed */
+    color: lightblue; /* Base color of the text */
+  }
+  .course-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 70vh;
+  }
+  
+  .course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .register-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .register-link:hover {
+    background-color: #0056b3;
+  }
+  

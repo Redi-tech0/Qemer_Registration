@@ -1,0 +1,89 @@
+*{
+  padding:0;
+  margin :0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  background-image: url(picture\ 2.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  font-family: 'outfit' ;
+  
+  background-position: center center;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+}
+
+
+
+.text-section h1 {
+  font-family: 'Montserrat', sans-serif; /* Choose your font */
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold; /* Adjust weight as needed */
+  color: #fff; /* Base color of the text */
+  
+}
+
+
+
+.text-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.more-button-container {
+  text-align: left; /* Aligns the button to the left */
+  margin-top: auto; /* Pushes the button to the bottom */
+  padding-left: 20px; /* Adds some padding from the left edge */
+}
+
+.more-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #6a5acd, #00bfff); /* Gradient background */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-button:hover {
+  background: linear-gradient(45deg, #00bfff, #6a5acd); /* Reverse the gradient on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+/* Adding a glowing effect */
+.more-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+}
+
+.more-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.more-button:active {
+  transform: translateY(-2px); /* Slightly less movement on click */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
